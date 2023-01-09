@@ -20,11 +20,11 @@ public class MuttersDAO {
     // JDBCドライバを読み込む
     try {
         Class.forName("org.h2.Driver");
-    } catch(ClassNotFoundException e) {
+    } catch (ClassNotFoundException e) {
         throw new IllegalStateException("JDBCドライバを読み込めませんでした");
     }
     // データベース接続
-    try(Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
+    try (Connection conn = DriverManager.getConnection(JDBC_URL, DB_USER, DB_PASS)) {
 
       // SELECT文の準備
       String sql = "SELECT ID,NAME,TEXT FROM MUTTERS ORDER BY ID DESC";
