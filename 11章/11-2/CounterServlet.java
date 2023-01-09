@@ -2,6 +2,7 @@ package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,7 +17,6 @@ public class CounterServlet extends HttpServlet {
 
   public void init(ServletConfig config) throws ServletException {
     super.init(config);
-
     // 訪問回数を初期化
     count = 0;
   }

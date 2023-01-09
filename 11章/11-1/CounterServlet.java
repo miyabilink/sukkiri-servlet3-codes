@@ -16,7 +16,6 @@ public class CounterServlet extends HttpServlet {
 
   public void init(ServletConfig config) throws ServletException {
     super.init(config);
-
     // 訪問回数を表すIntegerインスタンスを新規作成し
     // アプリケーションスコープに保存
     Integer count = 0;
