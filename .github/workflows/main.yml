@@ -10,11 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-
-      - name: create a zip file
-        run: ls &&
-          zip -r release.zip *章 どこつぶ LICENSE.txt README.md &&
       - uses: actions/checkout@v4
       - name: create a ZIP file
         run: ls &&
